@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #282425;
+  background-color: #fff1e6;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #282425;
+  height: 70px;
+  color: white;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+nav li a {
+  text-decoration: none;
+  padding: 20px 30px;
+  color: white;
+  display: inline-block;
+  width: 100%;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+  background-color: #756158;
+}
+
+.menu-icon {
+  display: none;
+  margin-right: 30px;
+}
+
+.welcome {
+  background-image: url(images/header.jpg);
+  min-height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2,
+h3 {
+  color: #756158;
+  font-family: "Playfair Display", serif;
+}
+
+h1 {
+  font-size: 80px;
+  color: white;
+  margin: 0;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+  font-size: 48px;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+blockquote {
+  text-align: center;
+  color: white;
+  font-style: italic;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+.about,
+.vipsection {
+  padding: 50px 15%;
+  overflow: auto;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.vipsection {
+  background-color: #f9e3d0;
+}
+
+.about p {
+  width: 70%;
+  text-align: center;
+}
+
+img {
+  width: 40%;
+  transition: all 0.5s linear;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+footer {
+  background-color: #282425;
+  color: whitesmoke;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+@media (max-width: 1000px) {
+  img {
+    width: 100%;
+  }
+
+  .images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  header {
+    position: relative;
+  }
+
+  header nav {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+  }
+
+  .menu-icon {
+    display: block;
+    color: white;
+    font-size: 23px;
+  }
+
+  header nav li {
+    display: block;
+    text-align: center;
+    background-color: #282425;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 650px) {
+  header nav {
+    display: block !important;
+  }
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 40px;
+  }
+}
