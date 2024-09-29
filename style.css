@@ -12,6 +12,7 @@ body {
   line-height: 1.5;
 }
 
+/* Menu */
 header {
   display: flex;
   flex-direction: row;
@@ -46,6 +47,7 @@ nav a:active {
   margin-right: 30px;
 }
 
+/* Welcome Section */
 .welcome {
   background-image: url(images/header.jpg);
   min-height: 50vh;
@@ -58,6 +60,14 @@ nav a:active {
   align-items: center;
 }
 
+blockquote {
+  text-align: center;
+  color: white;
+  font-style: italic;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Headlines */
 h1,
 h2,
 h3 {
@@ -81,17 +91,10 @@ h2 {
 
 h3 {
   font-size: 24px;
-  margin-top: 36px;
-  margin-bottom: 36px;
+  margin-bottom: 20px;
 }
 
-blockquote {
-  text-align: center;
-  color: white;
-  font-style: italic;
-  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
-}
-
+/* Sections about and vip */
 .about,
 .vipsection {
   padding: 50px 15%;
@@ -114,6 +117,7 @@ blockquote {
   text-align: center;
 }
 
+/* Images in about section */
 img {
   width: 40%;
   transition: all 0.5s linear;
@@ -126,11 +130,63 @@ img {
   margin-top: 30px;
 }
 
+/* Footer */
 footer {
   background-color: #282425;
   color: whitesmoke;
   text-align: center;
   padding: 20px 0px;
+}
+
+/* Form */
+.form-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.error {
+  color: red;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.success {
+  color: green;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.submit-btn {
+  background-color: #756158;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px;
 }
 
 @media (max-width: 1000px) {

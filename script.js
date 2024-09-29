@@ -1,3 +1,4 @@
+//Responsive menu
 const menuIcon = document.querySelector(".menu-icon");
 const menuList = document.querySelector("nav");
 const hamburgerIcon = document.querySelector(".fa-solid");
@@ -14,6 +15,7 @@ menuIcon.addEventListener("click", () => {
   }
 });
 
+//Enlarging images
 const image1 = document.querySelector(".image1");
 const image2 = document.querySelector(".image2");
 const image3 = document.querySelector(".image3");
@@ -31,3 +33,32 @@ function enlargeImage(image) {
 enlargeImage(image1);
 enlargeImage(image2);
 enlargeImage(image3);
+
+//Form - passwords validation
+document
+  .getElementById("registrationForm")
+  .addEventListener("input", function () {
+    validateForm();
+  });
+
+function validateForm() {
+  const password = document.getElementById("password").value;
+  const confirmPassword = document.getElementById("confirmPassword").value;
+  const errorElement = document.getElementById("passwordError");
+
+  if (password !== confirmPassword) {
+    errorElement.textContent = "Password do not match";
+    errorElement.classList.add("error");
+    errorElement.classList.remove("success");
+  } else {
+    errorElement.textContent = "Password match";
+    errorElement.classList.add("success");
+    errorElement.classList.remove("error");
+  }
+
+  if (password === "" || confirmPassword === "") {
+    errorElement.textContent = "";
+    errorElement.classList.remove("success");
+    errorElement.classList.remove("error");
+  }
+}
