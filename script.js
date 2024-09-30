@@ -62,3 +62,16 @@ function validateForm() {
     errorElement.classList.remove("error");
   }
 }
+
+//Scrolling and arrow up
+const arrowUp = document.querySelector(".arrow-icon");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= 200) {
+    arrowUp.style.display = "block";
+  }
+});
+
+arrowUp.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
