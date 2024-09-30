@@ -17,7 +17,7 @@ body {
 header {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   background-color: #282425;
   height: 70px;
@@ -46,6 +46,11 @@ nav a:active {
 .menu-icon {
   display: none;
   margin-right: 30px;
+}
+
+.mode-icon {
+  margin-left: 30px;
+  font-size: 25px;
 }
 
 /* Welcome Section */
